@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>car ___ test_01</h1>
+
+    <div style="max-width:400px" id="car_route">
+        <div class="cloudimage-360"
+            id="car_route_in"
+            data-folder="https://xs810378.xsrv.jp/Tossy_JS_2023_11/images/01/"
+            data-filename="cc-{index}.png" 
+            data-amount="34" 
+            data-autoplay="false" 
+            data-lazyload>
+        </div>
+    </div>
+
+
+    <!-- ボタン1: data-filenameを変更する -->
+    <button onclick="changeImage()">色チェンジ</button>
+
+    <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/latest/js-cloudimage-360-view.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+
+    <script>
+
+        // ページロード完了後にJSファイルを読み込む
+        
+        /*
+        window.onload = function () {
+            var el = document.createElement("script");
+            el.src = "https://cdn.scaleflex.it/filerobot/js-cloudimage-360-view/v2.0.4.min.js";
+            document.body.appendChild(el);
+            
+        }
+        */
+        
+
+        function changeImage() {
+
+            window.CI360.destroy();
+
+
+            var car_route = document.getElementById('car_route');
+            var car_route_in = document.getElementById('car_route_in');
+
+            // 新しい画像を追加
+            var folder = "https://xs810378.xsrv.jp/Tossy_JS_2023_11/images/02/";
+
+        //    var activeIndex = window.CI360.getActiveIndexByID(car_route);
+            var activeIndex = window.CI360.getActiveIndexByID(car_route_in);
+
+            // index を含む新しいファイル名
+       //     var newFilename = "aa-" + (activeIndex + 1) + ".png";
+       //     var newFilename = "aa-" + (parseInt(activeIndex) + 1) + ".png";
+            var newFilename = "aa-{index}.png";
+
+          //  var car_route_in = document.getElementById('car_route_in');
+
+         //   window.CI360.init();
+
+            car_route_in.setAttribute('data-folder', folder);
+            car_route_in.setAttribute('data-filename', newFilename);
+
+        //    var activeIndex = window.CI360.getActiveIndexByID(car_route_in);
+
+            window.CI360.init();
+
+            // 画像を更新
+            window.CI360.update(car_route_in);
+
+
+        //    var activeIndex = window.CI360.getActiveIndexByID(car_route_in);
+        //    window.CI360.switchView(car_route_in, activeIndex);
+
+            
+    //        var activeIndex = window.CI360.getActiveIndexByID(car_route_in);
+    //        window.CI360.switchView(car_route_in, activeIndex);
+            
+          
+          //  window.CI360.update(viewId);
+          
+        }   
+
+
+    </script>
+
+    
+    
+    
+
+  
+
+    <!-- 表示できない
+    <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2/js-cloudimage-360-view.min.js"></script>
+    -->
+
+    <!-- 表示できない NG
+    <script src="https://scaleflex.cloudimg.io/v7/plugins/js-cloudimage-360-view/latest/js-cloudimage-360-view.min.js?func=proxy"></script> 
+     -->
+
+    <!--
+    <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2.7.7/js-cloudimage-360-view.min.js"></script>
+    -->
+
+    
+    <!--
+    <script src="https://cdn.scaleflex.it/filerobot/js-cloudimage-360-view/v2.0.4.min.js"></script>
+    -->
+
+    
+   
+    
+
+</body>
+</html>

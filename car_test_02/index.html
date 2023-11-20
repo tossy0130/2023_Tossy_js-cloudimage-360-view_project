@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>car ___ test_02</h1>
+
+    <div style="max-width:400px" id="car_route">
+        <div class="cloudimage-360"
+            id="car_route_in"
+            data-folder="https://xs810378.xsrv.jp/Tossy_JS_2023_11/images/01/"
+            data-filename="cc-{index}.png" 
+            data-amount="34" 
+            data-autoplay="false" 
+            data-lazyload>
+        </div>
+    </div>
+
+    <div style="max-width:400px" id="car_route_02">
+        <div class="cloudimage-360"
+        data-folder="https://xs810378.xsrv.jp/Tossy_JS_2023_11/images/02/"
+        data-filename="aa-{index}.png" 
+        data-amount="34" 
+        data-autoplay="false" 
+        data-lazyload>
+        </div>
+    </div>
+
+
+     <!-- ボタン2: 画像の表示・非表示を切り替える -->
+     <button onclick="toggleImages()">画像 02</button>
+
+     <!-- ボタン2: 画像の表示・非表示を切り替える -->
+     <button onclick="toggleImages_02()">画像 01</button>
+
+
+     <script>
+
+        // === 初期の表示・非表示　設定
+        var carRoute = document.getElementById('car_route');
+        var car_route_02 = document.getElementById('car_route_02');
+        car_route_02.style.display = 'none';
+
+    // ページロード完了後にJSファイルを読み込む
+    /*
+    window.onload = function () {
+        var el = document.createElement("script");
+        el.src = "https://cdn.scaleflex.it/filerobot/js-cloudimage-360-view/v2.0.4.min.js";
+        document.body.appendChild(el);
+        
+        // === 
+        var carRoute = document.getElementById('car_route');
+        var car_route_02 = document.getElementById('car_route_02');
+        car_route_02.style.display = 'none';
+    };*/
+
+    // ========================================== とりあえずの処理 
+    // === 表示・非表示　切り替え
+    function toggleImages() {
+        var carRoute = document.getElementById('car_route');
+        var carRoute02 = document.getElementById('car_route_02');
+
+        // car_routeを非表示にし、car_route_02を表示する
+        carRoute.style.display = 'none';
+        carRoute02.style.display = 'block';
+    }
+
+     // === 表示・非表示　切り替え
+     function toggleImages_02() {
+        var carRoute = document.getElementById('car_route');
+        var carRoute02 = document.getElementById('car_route_02');
+
+        // car_routeを非表示にし、car_route_02を表示する
+        carRoute.style.display = 'block';
+        carRoute02.style.display = 'none';
+    }
+
+
+</script>
+
+<script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/latest/js-cloudimage-360-view.min.js"></script>
+
+
+<!-- 表示できない
+<script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2/js-cloudimage-360-view.min.js"></script>
+-->
+
+<!-- 表示できない NG
+<script src="https://scaleflex.cloudimg.io/v7/plugins/js-cloudimage-360-view/latest/js-cloudimage-360-view.min.js?func=proxy"></script> 
+ -->
+
+<!--
+<script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2.7.7/js-cloudimage-360-view.min.js"></script>
+-->
+
+
+<!--
+<script src="https://cdn.scaleflex.it/filerobot/js-cloudimage-360-view/v2.0.4.min.js"></script>
+-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+
+
+</body>
+</html>
