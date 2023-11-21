@@ -1,0 +1,36 @@
+
+/* ==================== 確認画面 ==================== */
+
+body {
+    font-family: 'Noto Sans JP',
+    'Yu Gothic Medium',
+    '游ゴシック Medium',
+    YuGothic,
+    '游ゴシック体',
+    'ヒラギノ角ゴ Pro W3',
+    'メイリオ',
+    sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* コンテンツ */
+.content_01 {margin: 0 auto;}
+
+.design03 {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top: solid 1px #778ca3;
+}
+
+.design03 tr:nth-child(2n+1) {
+    background: #eaedf2;
+}
+
+.design03 th,
+.design03 td {
+    padding: 10px;
+    border-bottom: solid 1px #778ca3;
+}

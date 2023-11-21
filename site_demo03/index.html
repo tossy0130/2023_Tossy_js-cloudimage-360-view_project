@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+	
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3JXGMEX22V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3JXGMEX22V');
+</script>
+
+        <title>Midさん サンプルページ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- 
+        <link href="css/style.css" rel="stylesheet">
+        -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <style>
+            body {font-family: "Helvetica Neue",Arial,
+    "Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;}
+
+            img {width: 100%; height: auto;}
+
+            .s_img {width: 132%; height: auto;position: relative;
+    left: -20%;}
+
+            .show {display: block;}
+            .img_hide {display: none;}
+            .flex{display: flex;width: 1200px;margin: 0 auto;}
+            .flex > div:nth-child(1) {width: 55%;}
+            .flex > div:nth-child(2) {width: 40%;}
+
+            .main_image {list-style: none;}
+
+            .sub_image {list-style:  none;}
+
+
+            /*================ 右側コンテンツ ================*/
+            /* === ボタン （テーブル用） */
+            .btn_table {
+                display: flex;list-style: none;margin: 0 0 0 8px;
+            }
+
+            .btn_table > li{margin: 0 0.2em}
+
+
+            .t_color_img {width: 60%;height: 115%;}
+            .t_color_img_02 {width: 60%;height: 85%;}
+
+            h2.t_title {
+                background: #4A4E4F;margin: 0 0px 35px 50px;
+            }
+
+            h2.t_title > p:nth-child(1) {font-size: 21px;color: #fff;
+    border-bottom: dotted 1px #fff;padding: 5px 0px;margin: 10px 25px;}
+
+            h2.t_title > p:nth-child(2) {font-size: 18px;color: #fff;padding: 3px 0;margin: 0 0 0px 25px;}
+            
+            .mini_title {margin: 15px 0 15px 50px;}
+
+            /* === 脚　カラー === */
+            .btn_ashi { display: flex;list-style: none;margin: 0 0 0 8px;}
+            .btn_ashi > li{margin: 0 0.2em}
+
+            /* === フレームタイプ === */
+            .f_type {display: flex;}
+
+            .button003 {
+                margin: 15px 10px 0px 25px;
+            }
+
+            .button003 a {background: transparent;border-radius: 15px;
+        position: relative;justify-content: space-around;align-items: center;
+        padding: 20px 40px;color: #313133;transition: 0.3s ease-in-out;
+        font-weight: 500;text-decoration: none;border: 2px solid #999;
+        margin: 0px 15px;font-size: 13px;
+        }
+
+        .button003 a:hover {
+                background: #313131;
+                color: #FFF;
+        }
+
+        .button001 {
+    }
+
+    .button001 a {
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        color: #333;
+        background: transparent;border-radius: 15px;
+        position: relative;justify-content: space-around;
+        align-items: center;padding: 20px 40px;color: #313133;
+        transition: 0.3s ease-in-out;font-weight: 500;
+        text-decoration: none;border: 2px solid #999;
+        margin: 0px 15px;font-size: 13px;top: 44px;
+    width: 61%;;left: 5%;text-decoration: none;
+        text-align: center;
+    }
+
+         .button001 a:hover {
+                background: #313131;
+                color: #FFF;
+        }
+
+        /*========= テーブルタイプ ======== */
+
+        .f_type > li {
+            list-style: none;position: relative;top: -35px;
+        }
+
+        /*=== シルバー　ボタン ===*/
+        .f_type > li:nth-child(1) > a{display: inline-block;
+    padding: 1em 1.3em;text-decoration: none;text-align: center;
+    display: block;color: #333;background: transparent;
+    border-radius: 15px;position: relative;justify-content: space-around;
+    align-items: center;padding: 12px 35px;color: #313133;
+    transition: 0.3s ease-in-out;font-weight: 500;text-decoration: none;
+    border: 2px solid #999;margin: 0px 15px;font-size: 13px;
+    top: 50px;width: 52%;left: -10%;text-decoration: none;
+    text-align: center;
+        }
+
+         .f_type > li:nth-child(2) > a {display: inline-block;
+    padding: 1em 1.3em;text-decoration: none;text-align: center;
+    display: block;color: #333;background: transparent;
+    border-radius: 15px;position: relative;justify-content: space-around;
+    align-items: center;padding: 12px 35px;color: #313133;
+    transition: 0.3s ease-in-out;font-weight: 500;text-decoration: none;
+    border: 2px solid #999;margin: 0px 15px;font-size: 13px;
+    top: 50px;width: 52%;left: 31%;text-decoration: none;
+    text-align: center;
+        }
+
+        .f_type > li:nth-child(1) > a:hover {
+             background: #313131;
+             color: #FFF;
+        }
+
+        .f_type > li:nth-child(2) > a:hover {
+             background: #313131;
+             color: #FFF;
+        }
+
+
+
+        </style>
+
+    </head>
+    <body>
+
+      <div class="container">
+        <div class="flex">
+        
+        <!--- 左側　画像コンテンツ --->
+            <div>
+            <ul id="main_image" class="main_image">
+                <li><img src="./img/t_bulue.png"></li>
+                <li class="img_hide"><img src="./img/t_gleen.png"></li>
+                <li class="img_hide"><img src="./img/t_red.png"></li>
+                <li class="img_hide"><img src="./img/t_yellow.png"></li>
+                <li class="img_hide"><img src="./img/t_bulue.png"></li>
+                <li class="img_hide"><img src="./img/t_gleen.png"></li>
+                <li class="img_hide"><img src="./img/t_red.png"></li>
+                <li class="img_hide"><img src="./img/t_yellow.png"></li>
+                <li class="img_hide"><img src="./img/t_ashi/red_glay.png"></li>
+                <li class="img_hide"><img src="./img/t_ashi/bulue_glay.png"></li>
+            </ul>
+
+            <ul id="sub_image" class="sub_image">
+                <li style="overflow: hidden;"><img src="./img/TAK_3667.jpg" class="s_img"></li>
+            </ul>
+
+            </div>
+        <!--- 左側　画像コンテンツ END --->
+            
+
+            <!-- 右側コンテンツ  -->
+            <div>
+
+            <h2 class="t_title">
+                <p>テーブルロータイプ</p>
+                <p>G-Tellus</p>
+            </h2>
+            
+            <!-- テーブルカラー  -->
+            <p class="mini_title">テーブルカラー</p>
+            <ul id="btn" class="btn_table">
+                <li><img src="./img/honban/tak_01.jpg" class="t_color_img"></li>
+                <li><img src="./img/honban/tak_02.jpg" class="t_color_img"></li>
+                <li><img src="./img/honban/tak_03.jpg" class="t_color_img"></li>
+                <li><img src="./img/honban/tak_04.jpg" class="t_color_img"></li>
+                <li><img src="./img/honban/tak_05.jpg" class="t_color_img"></li>
+                <li><img src="./img/honban/tak_06.jpg" class="t_color_img"></li>
+                <li><img src="./img/honban/tak_07.jpg" class="t_color_img"></li>
+                <li><img src="./img/honban/tak_08.jpg" class="t_color_img"></li>
+            </ul>
+
+            <!-- 脚カラー  -->
+
+            <!--
+            <p class="mini_title">脚カラー</p>
+            -->
+
+            <!-- フレームタイプ -->
+            <p class="mini_title">フレームタイプ</p>
+
+            <ul id="btn_ashi" class="btn_ashi">
+                <li><img src="./img/t_ashi/t_ashi_black.jpg" class="t_color_img_02"></li>
+                <li><img src="./img/t_ashi/t_ashi_block.jpg" class="t_color_img_02"></li>
+
+                <!--
+                <li><img src="./img/t_color/t_03.jpg" class="t_color_img"></li>
+                -->
+            </ul>
+
+         
+           
+            <ul id="f_type" class="f_type" style="display:flex;">
+                    <li>
+                    <a href="#" alt="作った人 夏目智徹, 夏目 智徹,toshiyuki natsume">ブラック</a>
+                    </li>
+
+                    <li>
+                    <a href="#">ホワイト</a>
+                    </li>
+            </ul>
+          
+
+            <div class="button001">
+                    <a href="#">お問い合わせ</a>
+            </div>
+
+            </div> <!-- 右コンテンツ　END -->
+
+        </div>
+    </div>
+
+        <script>
+
+
+//　$(window).load(function () {
+$(function(){
+
+        // === 初期設定
+       var num = 0;
+       var num_2;
+       var num_3; //=== フレームタイプ　の eq 取得
+      
+       /*
+       $("#main_image li").eq(0).addClass("show"); 
+       $("#main_image li").eq(0).removeClass("img_hide");
+       */
+
+       // === 最初に表示する要素 
+       // $("#main_image li").eq(0).removeClass("img_hide");
+       $("#main_image li").eq(0).show(); 
+
+       
+       // === フレームタイプ
+        $("#sub_image").hide(); // === 「ホワイト」非表示
+
+       // === テーブルカラー選択
+       $("#btn li").click(function () {
+        num = $("#btn li").index(this);
+        $("#main_image li").hide();
+        $("#main_image li").eq(num).show();
+    });
+
+        // === 脚カラー
+        $("#btn_ashi li").click(function(){
+            num_2 = $("#btn_ashi li").index(this);
+
+            
+            //=====================
+            // === シルバーだったら
+            //=====================
+            if (num_2 == 0) {
+                $("#sub_image").hide();
+                $("#main_image").fadeIn('fast');
+
+                /*
+                $("#main_image li").eq(0).hide();
+                $("#main_image li").eq(0).hide(); 
+                $("#main_image li").eq(0).fadeOut('normal'); 
+
+                $("#main_image li").eq(10).removeClass("img_hide");
+                $("#main_image li").eq(10).show(); 
+                $("#main_image li").eq(10).fadeIn('normal'); 
+                */
+            } else if (num_2 == 1) {
+                //=====================
+                // === ホワイトだったら
+                //=====================
+
+                $("#main_image").hide();
+                $("#sub_image").show();
+
+                if (num == -1) {
+                    $("#sub_image li").eq(0).fadeIn('fast');
+                } else {
+                    $("#sub_image li").eq(num).fadeIn('fast');
+                }
+
+
+            }
+
+            /*
+            if(num == 2 && num_2 == 0 || num == 6 && num_2 == 0) {
+                $("#main_image li").hide();
+                $("#main_image li").eq(8).show();
+
+                console.log("num:::" + num);
+                console.log("num_2:::" + num_2);
+
+            }else if(num == 0 && num_2 == 0 || num == 4 && num_2 == 0) {
+                $("#main_image li").hide();
+                $("#main_image li").eq(9).show();
+
+                console.log("num:::" + num);
+                console.log("num_2:::" + num_2);
+
+            } else if (num == 2 && num_2 == 1 || num == 6 && num_2 == 1) {
+                $("#main_image li").hide();
+                $("#main_image li").eq(2).show();
+
+                console.log("num:::" + num);
+                console.log("num_2:::" + num_2);
+
+            } else if (num == 0 && num_2 == 1 || num == 4 && num_2 == 1) {
+                $("#main_image li").hide();
+                $("#main_image li").eq(0).show();
+
+                console.log("num:::" + num);
+                console.log("num_2:::" + num_2);
+            }
+            */
+
+        });
+
+        // === フレームタイプ
+        $("#f_type li").click(function(){
+
+            // === 「ホワイト」が押されたら
+
+            num_3 = $("#f_type li").index(this);
+    
+            console.log("カラータイプ eq:::" + num);
+            console.log("フレームタイプ eq:::" + num_2);
+            console.log("メイン画像:::" + num_3); // 押された時の、メイン画像の eq を取得　表示
+          
+
+            //=====================
+            // === シルバーだったら
+            //=====================
+            if(num_3 == 0) {
+                $("#sub_image").hide(); 
+                $("#main_image").fadeIn('fast');
+
+                /*
+                $("#main_image li").eq(0).hide();
+                $("#main_image li").eq(0).hide(); 
+                $("#main_image li").eq(0).fadeOut('normal'); 
+
+                $("#main_image li").eq(10).removeClass("img_hide");
+                $("#main_image li").eq(10).show(); 
+                $("#main_image li").eq(10).fadeIn('normal'); 
+                */
+            } else if(num_3 == 1) {
+            //=====================
+            // === ホワイトだったら
+            //=====================
+
+                $("#main_image").hide();
+                $("#sub_image").show(); 
+
+                if(num == -1) {
+                    $("#sub_image li").eq(0).fadeIn('fast');
+                } else {
+                    $("#sub_image li").eq(num).fadeIn('fast');
+                }
+
+
+            }
+          
+        });
+
+});            
+
+         
+        </script>
+
+    </body>
+</html>

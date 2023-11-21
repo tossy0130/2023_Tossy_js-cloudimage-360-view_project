@@ -1,0 +1,270 @@
+
+/*** ========= 追加 CSS ========= ***/
+
+html{
+    
+}
+
+
+
+/* コンタクト　テキスト */
+.u-en {
+  font-family: 'Poppins', sans-serif;font-weight: 600;
+  line-height: 1.2;letter-spacing: .02em;
+}
+
+.c-head01 {
+    font-size: 4rem;
+}
+
+/* フォーム　プレースホルダーテキスト */
+.holder_text {display: inline-block;font-size: 14px;
+color: #999;position: relative;left: 80%;}
+
+
+/* プレイスホルダー */
+#pl_01
+{
+}
+
+#pl_02{display: inline-block;position: relative;
+left: 150%;top: -20px;
+}
+
+#pl_03 {top: -25px;
+}
+
+#pl_04 {top:-25px;
+}
+
+/* プレイスホルダー END */
+
+
+
+/*=========== フォーム　============*/
+
+/* フォーム　エラーメッセージ */
+.err_span {color:#EA3E38; display: inline-block; padding: 10px 0px 10px 40px;}
+
+.err_span2 {
+    color: #EA3E38;
+    padding: 10px 0px 10px 40px;
+    display: block;
+}
+
+/* === セレクトボックス ===*/
+.select {
+    background: #fff;height: 40px;width: 300px;
+    border-radius: 5px;position: relative;z-index: 1;left: 6%;
+}
+
+.select::after {
+    position: absolute;content: '';width: 8px;
+    height: 8px;right: 10px;top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    border-bottom: 2px solid #666;border-right: 2px solid #666; z-index: -1;}
+
+select {
+    /* 初期化 */
+    appearance: none;-moz-appearance: none;-webkit-appearance: none;
+    background: none;border: none;color: #333;font-size: 16px;
+    width: 100%;height: 100%;padding: 0 10px;position: relative;
+}
+
+/* === セレクトボックス ===*/
+
+
+.Form {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+
+@media screen and (max-width: 480px) {
+    .Form {
+        margin-top: 40px;
+    }
+}
+
+.Form-Item {padding-top: 5px;padding-bottom: 5px; width: 100%;
+ align-items: center;
+}
+
+.Form-Item02 {padding-top: 16px;padding-bottom: 16px;
+    width: 100%;align-items: center;border-bottom: 1px solid #999;
+}
+
+@media screen and (max-width: 480px) {
+    .Form-Item {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        flex-wrap: wrap;
+    }
+
+    .Form-Item02 {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        flex-wrap: wrap;
+    }
+}
+
+.Form-Item:nth-child(5) {}
+
+.Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    left: 6%;
+    top: 10px;
+    margin: 5px 0 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .Form-Item-Label {
+        max-width: inherit;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+}
+
+.Form-Item-Label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+
+/* 必須 文字 */
+@media screen and (max-width: 480px) {
+    .Form-Item-Label.isMsg {
+        margin-top: 0;
+    }
+}
+
+/* 必須 文字 */
+.Form-Item-Label-Required {border-radius: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;width: 48px;display: inline-block;
+    text-align: center;background: #EA3E38;color: #fff;
+    font-size: 12px;margin: 0 0 0 8px;
+}
+
+@media screen and (max-width: 480px) {
+    .Form-Item-Label-Required {
+        border-radius: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 32px;
+        font-size: 10px;
+    }
+}
+
+.Form-Item-Input {
+    border: 0.4px solid #ddd;
+    border-radius: 3px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    background: #fff;
+    font-size: 18px;
+
+    max-width: 485px;
+}
+
+@media screen and (max-width: 480px) {
+    .Form-Item-Input {
+        margin-left: 0;
+        margin-top: 18px;
+        height: 40px;
+        flex: inherit;
+        font-size: 15px;
+    }
+}
+
+.Form-Item-Textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 480px;
+    background: #fff;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+    .Form-Item-Textarea {
+        margin-top: 18px;
+        margin-left: 0;
+        height: 200px;
+        flex: inherit;
+        font-size: 15px;
+    }
+}
+
+.Form-Btn {
+    border-radius: 4px;margin-top: 32px;margin-left: auto;
+    margin-right: auto;padding-top: 20px;padding-bottom: 20px;
+    width: 280px;display: block;
+
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 16px;
+
+    background: linear-gradient(to top, rgb(42, 191, 171), #32d3bb);
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+
+    border: none;
+    letter-spacing: 0.17em;
+}
+
+.Form-Btn02 {
+    border-radius: 4px;margin-top: 68px;
+    margin-left: auto;margin-right: auto;padding-top: 20px;
+    padding-bottom: 20px;width: 280px;display: block;
+
+    background: linear-gradient(to top, rgb(42,191,171), #32d3bb);
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+
+    letter-spacing: 0.05em;
+  
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+  
+    letter-spacing: 0.17em;
+}
+
+
+@media screen and (max-width: 480px) {
+    .Form-Btn {
+        margin-top: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 92%;
+        font-size: 12px;
+    }
+
+    .Form-Btn02 {
+        margin-top: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 92%;
+        font-size: 12px;
+    }
+}
